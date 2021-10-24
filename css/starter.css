@@ -84,8 +84,9 @@ body{
     min-height: 475px;
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
     justify-content: center;
+    align-content: center;
+    
     
   }
 
@@ -98,6 +99,7 @@ body{
     flex-basis: 450px;
     flex-flow: column ;
     align-content: center;
+    
     
     
     
@@ -148,9 +150,29 @@ body{
   }
 
   .gallery{
-    min-height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+
   }
-  
+  .gallery  #image1, #image2, #image3, #image4, #image5{
+    min-height: 600px;
+    border: solid 10px #50C7C7;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+    
+  }
+  /*Keyframes for animation*/
+  @keyframes grow{
+    
+    from {width: 50px; opacity: 0;}
+    to {width: 425px; opacity: 1;}
+  }
+  #logo{
+    animation-name: grow;
+    animation-duration: 5s;
+  }
   footer{
     background-color: black;
     color: white;
