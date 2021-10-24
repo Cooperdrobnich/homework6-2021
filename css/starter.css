@@ -56,7 +56,10 @@ body{
   *:focus{
     border: 2px solid black;
   }
-
+  a:visited{
+    color: inherit;
+    
+   }
 
   .nav_item a{
     padding: 10px;
