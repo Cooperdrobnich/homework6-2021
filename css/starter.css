@@ -82,6 +82,11 @@ body{
 
   .pricing{
     min-height: 475px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    
   }
 
   .card {
@@ -89,7 +94,24 @@ body{
     background: #fff;
     border-radius: 7px;
     padding: 0 0 25px 0;
+    display: flex;
+    flex-basis: 450px;
+    flex-flow: column ;
+    align-content: center;
+    
+    
+    
   
+  }
+
+  .card header{
+    background: #288088;
+    background-size: cover;
+    border: solid 2px #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
   }
 
   .card > ul{
