@@ -56,14 +56,23 @@ body{
   *:focus{
     border: 2px solid black;
   }
- .nav_item a:visited{
-   color: initial;
- }
+ 
+  .nav_links{
+    display: flex;
+    flex-flow: column wrap ;
+    align-content: center;
+    
 
+  }
   .nav_item a{
     padding: 10px;
+    color: blue;
   }
   
+
+.nav_item a:visited{
+  color: blue;
+}
   .nav_item a:hover, a:focus{
     color: #50C7C7;
     text-decoration: underline;
