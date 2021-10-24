@@ -56,10 +56,9 @@ body{
   *:focus{
     border: 2px solid black;
   }
-  a:visited, a:hover, a:active{
-    color: inherit;
-    
-   }
+ .nav_item a:visited{
+   color: initial;
+ }
 
   .nav_item a{
     padding: 10px;
