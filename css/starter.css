@@ -2,24 +2,13 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16pt; /* test for this! Make all sizes em or rem */
-    background-image: url(../images/concrete_seamless.png);
-    background-color: #f1f1f1;
-    font-family: "Alegreya Sans SC", serif;
-
-
-
   }
   
   header{
     background: #fff;
     border-bottom: 3px solid #50C7C7;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    align-items: center;
-      
   }
-
+  
   h1{
     font-size: 2em;
     text-align: center;
@@ -56,23 +45,12 @@ body{
   *:focus{
     border: 2px solid black;
   }
- 
-  .nav_links{
-    display: flex;
-    flex-flow: column wrap ;
-    align-content: center;
-    
 
-  }
+
   .nav_item a{
     padding: 10px;
-    color: blue;
   }
   
-
-.nav_item a:visited{
-  color: blue;
-}
   .nav_item a:hover, a:focus{
     color: #50C7C7;
     text-decoration: underline;
@@ -82,13 +60,6 @@ body{
 
   .pricing{
     min-height: 475px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    z-index: 0;
-    
-    
   }
 
   .card {
@@ -96,22 +67,7 @@ body{
     background: #fff;
     border-radius: 7px;
     padding: 0 0 25px 0;
-    display: flex;
-    flex-basis: 450px;
-    flex-flow: column ;
-    align-content: center;
-    z-index: 0;
-    
-  }
-
-  .card header{
-    background: #288088;
-    background-size: cover;
-    border: solid 2px #45ADAD;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+  
   }
 
   .card > ul{
@@ -148,39 +104,9 @@ body{
   }
 
   .gallery{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    justify-items: center;
-
-  }
-  .gallery  #image1, #image2, #image3, #image4, #image5{
     min-height: 600px;
-    border: solid 10px #50C7C7;
-    margin: 10px 10px 10px 10px;
-    width: 300px;
-    
-  }
-  /*Keyframes for animation*/
-  @-webkit-keyframes grow{
-    from {width: 50px; opacity: 0;}
-    to {width: 425px; opacity: 1;}
-    
   }
   
-  @keyframes grow{
-    
-    from {width: 50px; opacity: 0;}
-    to {width: 425px; opacity: 1;}
-    
-  
-  }
-  #logo{
-    animation-name: grow;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    
-  }
   footer{
     background-color: black;
     color: white;
@@ -194,60 +120,4 @@ body{
         transform: scaleY(1.1);
         z-index: -99;
   }
-  
-    header{
-      background: #fff;
-      border-bottom: 3px solid #50C7C7;
-     display: flex;
-      flex-flow: row  ;
-      justify-content: space-between;
-      position: sticky;
-      top: 0px;
-      z-index: 1;
-    
-    
-      }
-  
-      .nav_links{
-        display: flex;
-        flex-flow: row;
-      }
-      .card {
-        
-        display: flex;
-        flex-flow: column nowrap;
-        flex-basis: 250px;
-        
-  
-      }
-      .card header{
-        background: #288088;
-        background-size: cover;
-        border: solid 2px #45ADAD;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
-      }
-
-      
-
-      .pricing{
-        
-        display: flex;
-        flex-flow: row nowrap;
-        
-        
-        
-        
-      }
-
-
-
-    }
-    @media (prefers-reduced-motion) {
-      #logo {
-        animation: none;
-      }
-    }
-
+}
