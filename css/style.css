@@ -14,10 +14,9 @@ body{
     background: #fff;
     border-bottom: 3px solid #50C7C7;
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+    flex-flow: column;
     align-items: center; 
-    justify-content: center;
+    
       
   }
 
@@ -60,8 +59,8 @@ body{
  
   .nav_links{
     display: flex;
-    flex-flow: column wrap ;
-    align-content: center;
+    flex-flow: column;
+    align-items: center;
     
 
   }
@@ -84,10 +83,8 @@ body{
   .pricing{
     min-height: 475px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-content: center;
     align-items: center;
     z-index: 0;
     
@@ -102,7 +99,7 @@ body{
     display: flex;
     flex-basis: 450px;
     flex-flow: column ;
-    align-content: center;
+    
     z-index: 0;
     
   }
@@ -152,9 +149,9 @@ body{
 
   .gallery{
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-items: center;
+    
 
   }
   .gallery  #image1, #image2, #image3, #image4, #image5{
@@ -201,9 +198,10 @@ body{
     header{
       background: #fff;
       border-bottom: 3px solid #50C7C7;
-     display: flex;
-      flex-flow: row  ;
+      display: flex;
+      flex-flow: row;
       justify-content: space-between;
+      align-items: center;
       position: sticky;
       top: 0px;
       z-index: 1;
@@ -213,12 +211,12 @@ body{
   
       .nav_links{
         display: flex;
-        flex-flow: row;
+        flex-direction: row;
       }
       .card {
         
         display: flex;
-        flex-flow: column nowrap;
+        flex-direction: column;
         flex-basis: 250px;
         
   
@@ -245,12 +243,61 @@ body{
         
       }
 
-
+      
 
     }
+
     @media (prefers-reduced-motion) {
       #logo {
         animation: none;
       }
     }
+
+
+    @media print{
+
+      body{
+        margin: 0;
+        padding: 0;
+        font-size: 16pt; /* test for this! Make all sizes em or rem */
+        background-color: #f1f1f1;
+        background-image: none;
+        font-family: "Alegreya Sans SC", serif;
+      }
+      
+     
+      
+      nav{
+        width: 100%;
+      }
+      
+      .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+  
+      }
+      .pricing{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        
+
+      }
+      .card{
+        border: 2px solid #45ADAD;
+        flex-basis: 200px;
+
+
+      }
+      .gallery{
+        display: none;
+      }  
+
+      #gallery{
+        display: none;
+      }  
+      
+    }
+
 
