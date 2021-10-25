@@ -4,7 +4,7 @@ body{
     font-size: 16pt; /* test for this! Make all sizes em or rem */
     background-image: url(../images/concrete_seamless.png);
     background-color: #f1f1f1;
-    
+    font-family: "Alegreya Sans SC", serif;
 
 
 
@@ -216,7 +216,7 @@ body{
         display: flex;
         flex-flow: column nowrap;
         flex-basis: 250px;
-        justify-content: center;
+        
   
       }
       .card header{
@@ -229,14 +229,14 @@ body{
         border-top-right-radius: 7px;
       }
 
-      }
+      
 
       .pricing{
-        min-height: 475px;
+        
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
-        align-content: center;
+        
+        
         
         
       }
@@ -244,9 +244,9 @@ body{
 
 
     }
-
-@media (prefers-reduced-motion) {
+    @media (prefers-reduced-motion) {
       #logo {
         animation: none;
       }
     }
+
