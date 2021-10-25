@@ -86,6 +86,7 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
+    z-index: 0;
     
     
   }
