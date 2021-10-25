@@ -100,10 +100,6 @@ body{
     flex-flow: column ;
     align-content: center;
     
-    
-    
-    
-  
   }
 
   .card header{
@@ -164,14 +160,24 @@ body{
     
   }
   /*Keyframes for animation*/
+  @-webkit-keyframes grow{
+    from {width: 50px; opacity: 0;}
+    to {width: 425px; opacity: 1;}
+    
+  }
+  
   @keyframes grow{
     
     from {width: 50px; opacity: 0;}
     to {width: 425px; opacity: 1;}
+    
+  
   }
   #logo{
     animation-name: grow;
     animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
   }
   footer{
     background-color: black;
@@ -186,5 +192,37 @@ body{
         transform: scaleY(1.1);
         z-index: -99;
   }
-}
   
+    header{
+      background: #fff;
+      border-bottom: 3px solid #50C7C7;
+     display: flex;
+      flex-flow: row  ;
+      justify-content: space-between;
+      position: sticky;
+      top: 0px;
+    
+    
+      }
+  
+      .nav_links{
+        display: flex;
+        flex-flow: row;
+      }
+      .card {
+        
+        display: flex;
+        flex-flow: row nowrap;
+        flex-basis: 250px;
+        justify-content: center;
+  
+      }
+      .pricing{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+      }
+
+
+
+    }
