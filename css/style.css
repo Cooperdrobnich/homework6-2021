@@ -14,7 +14,7 @@ body{
     background: #fff;
     border-bottom: 3px solid #50C7C7;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center; 
     
       
@@ -37,15 +37,6 @@ body{
     
 
   }
-  p::before {
-    padding: 0 30px;
-    content: 👍;
-      
-  
-    }
-    
-
-  
   
   a.skip{
     background: white;
@@ -70,7 +61,7 @@ body{
  
   .nav_links{
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     
 
@@ -109,7 +100,7 @@ body{
     padding: 0 0 25px 0;
     display: flex;
     flex-basis: 450px;
-    flex-flow: column ;
+    flex-direction: column ;
     
     z-index: 0;
     
@@ -244,18 +235,6 @@ body{
         padding-bottom: 20px;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
-      }
-
-      
-
-      .pricing{
-        
-        display: flex;
-        flex-flow: row nowrap;
-        
-        
-        
-        
       }
 
       
