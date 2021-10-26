@@ -306,16 +306,20 @@ body{
       }
       .pricing{
         display: flex;
-        flex-flow: row ;
-        align-content: flex-end;
+        flex-flow: row nowrap;
+        align-content: center;
+        align-items: flex-end;
+        
         
 
       }
       .card{
         border: 2px solid #45ADAD;
         flex-basis: 250px;
-        display: flex;
-        align-content: center;
+        
+        
+        
+        
 
       }
 
